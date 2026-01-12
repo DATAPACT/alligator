@@ -16,13 +16,22 @@
 
 ## Installation
 
-Alligator is not yet available on PyPI. To install it, clone the repository and install it manually:
+Install from PyPI:
+
+```bash
+pip install alligator-linker
+```
+
+For local development, clone the repository and install it in editable mode:
 
 ```bash
 git clone https://github.com/your-org/alligator.git
 cd alligator
 pip install -e .
 ```
+
+The ML models are bundled with the package under `alligator/models`. To override,
+pass `ranker_model_path` and `reranker_model_path` when creating the config or class.
 
 Additionally, you need to download the SpaCy model by running:
 
